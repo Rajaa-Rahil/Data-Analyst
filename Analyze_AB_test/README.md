@@ -1,11 +1,11 @@
 ## A/B Test Analysis for E-commerce Website Conversion Rates 
 
-### Project Overview
+## Project Overview
 
 In this project a dataset containing the conversion rates between new and old websites for an e-commerce website is going to be analyzed. The data will be used to perform an A/B test, the goal is to help the community understand if they should implement the new page, keep the old one or run the experiment longer to make their decision.
 The analysis employs statistical methods including hypothesis testing, simulation, and logistic regression to provide data-driven recommendations.
 
-### Project Structure
+## Project Structure
 
 ### Part I: Probability Analysis
 
@@ -91,6 +91,6 @@ Based on the statistical analysis, the company should:
 - Multivariate testing of specific page elements.
 - Consider seasonal effects on conversion rates.
 
-### Note:
+## Note:
 
 This project was submitted  as part of the Data Analyst Nanodegree Program at [Udacity](https://www.udacity.com/course/data-analyst-nanodegree--nd002).
