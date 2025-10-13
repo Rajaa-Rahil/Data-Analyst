@@ -84,7 +84,7 @@ Based on the statistical analysis, the company should:
 - Verification of treatment-control group alignment.
 - Multiple validation methods for robustness.
 
-### Future Considerations
+## Future Considerations
 
 - Longer testing period to caputre potential long-term impacts.
 - Segmentation analysis based on demographics or user behavior.
