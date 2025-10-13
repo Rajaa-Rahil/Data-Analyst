@@ -1,5 +1,5 @@
 # Analyze-AB-Test-Results
-Udacity Data Analyst Nanodegree Project3  Analyze-AB-Test-Results
+This project was submitted  as part of the Data Analyst Nanodegree Program at [Udacity](https://www.udacity.com/course/data-analyst-nanodegree--nd002).
 
 
 ## Description
