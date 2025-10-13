@@ -5,7 +5,7 @@
 In this project a dataset containing the conversion rates between new and old websites for an e-commerce website is going to be analyzed. The data will be used to perform an A/B test, the goal is to help the community understand if they should implement the new page, keep the old one or run the experiment longer to make their decision.
 The analysis employs statistical methods including hypothesis testing, simulation, and logistic regression to provide data-driven recommendations.
 
-## Project Structure
+### Project Structure
 
 ### Part I: Probability Analysis
 
@@ -49,7 +49,7 @@ The analysis employs statistical methods including hypothesis testing, simulatio
 - **Interaction terms**: No significant effects detected.
 - Regression analysis confirms A/B test findings.
 
-## Conclusions
+### Conclusions
 
 ### Statistical Findings
 1. **No Significant Improvement**: The new landing page does not demonstrate statistically significant improvement in conversion rates.
@@ -84,13 +84,13 @@ Based on the statistical analysis, the company should:
 - Verification of treatment-control group alignment.
 - Multiple validation methods for robustness.
 
-## Future Considerations
+### Future Considerations
 
 - Longer testing period to caputre potential long-term impacts.
 - Segmentation analysis based on demographics or user behavior.
 - Multivariate testing of specific page elements.
 - Consider seasonal effects on conversion rates.
 
-## Note:
+### Note:
 
 This project was submitted  as part of the Data Analyst Nanodegree Program at [Udacity](https://www.udacity.com/course/data-analyst-nanodegree--nd002).
