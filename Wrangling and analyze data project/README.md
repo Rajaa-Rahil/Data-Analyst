@@ -3,8 +3,6 @@
 
 This project focuses on data wrangling, cleaning, and analysis of the popular **WeRateDogs** Twitter dataset. The analysis involves gathering data from various sources, assessing data quality and structure issues, cleaning the data, and generating visual insights about dog ratings and breed popularity.
 
----
-
 ## Project Overview
 
 The project demonstrates a full data wrangling workflow:
@@ -13,7 +11,12 @@ The project demonstrates a full data wrangling workflow:
 3. **Data Cleaning** — Fix, structure, and merge datasets into a single master file.
 4. **Data Analysis & Visualization** — Derive insights on tweet ratings and dog breeds.
 
----
+## Technologies Used
+- Python  
+- Pandas, NumPy  
+- Matplotlib  
+- Tweepy, Requests  
+- Jupyter Notebook
 
 ## Datasets
 
@@ -23,52 +26,51 @@ Three datasets were used in this project:
 2. `image-predictions.tsv`: Neural network predictions of dog breeds.
 3. `tweet_json.txt`: Fetched from Twitter API containing retweet and favorite counts.
 
----
+## Key Steps and Methods
 
-## Key Tasks
+### 1. Data Gathering
+- The first dataset is loaded locally via `pandas.read_csv()`.
+- The second dataset is downloaded programmatically using the Requests library.
+- The third dataset is collected through the **Twitter API** via Tweepy, using OAuth credentials to fetch JSON data for each tweet and save to file.
 
-### Data Gathering
-- Downloaded data from local files and the Udacity-provided URL.
-- Collected tweet information through the **Twitter API** using **Tweepy**.
+### 2. Data Assessment
+- Performed both visual and programmatic assessment.
+- Found major quality and tidiness issues such as:
+  - Missing values and inconsistent datatypes (e.g., `timestamp`, `tweet_id`).
+  - Invalid or inconsistent dog names (e.g., lowercase words like "a") and ratings with incorrect denominators.
+  - Multiple columns (`doggo`, `floofer`, `pupper`, `puppo`) representing one variable — “dog stage”.
+  - Duplicates in image URLs and missing prediction rows.
 
-### Data Assessment
-- Identified inconsistent names, missing values, incorrect rating denominators, and redundant dog stage columns.
-- Evaluated both **quality** and **tidiness** aspects of the data.
+### 3. Data Cleaning
+The cleaning process addressed these issues by:
+- Converting data types (`tweet_id` to string, `timestamp` to datetime).
+- Combining the four “dog stage” columns into a single one (`dogstage`).
+- Filtering out retweets and tweets without images.
+- Correcting invalid denominators (setting all to 10).
+- Removing duplicates and empty entries.
+- Merging all three data sources into one master DataFrame using the `tweet_id` as the key.
+- Creating a new column `rating = rating_numerator / rating_denominator`.
 
-### Data Cleaning
-- Converted data types (e.g., `timestamp` to datetime).
-- Combined multiple dog stage columns into one.
-- Removed retweets and tweets without images.
-- Merged all three datasets into a single clean dataset.
+## Output and Analysis
+### Clean Master Dataset
+- Final dataset: 1,994 entries, 22 columns.
+- Columns include:
+  - `tweetid`, `timestamp`, `text`, `expandedurls`, `ratingnumerator`, `ratingdenominator`, `jpgurl`, `prediction1`, `prediction2`, `prediction3`, `favoritecount`, `retweetcount`, `dogstage`, `rating`, `dogname`.
 
-### Analysis
-- Calculated ratings per tweet as `rating_numerator / rating_denominator`.
-- Visualized average ratings across dog breeds.
-- Found that **Labrador Retrievers** and **Golden Retrievers** were among the most consistently high-rated breeds.
+### Final Storage
+- Saved as `twitter_archive_master.csv`.
 
----
+### Visualization
+- A bar chart showing the top five dog breeds by average rating.
+- Result: Labrador Retriever ranks highest, followed by Golden Retriever.
 
-## Results
+## Summary of Findings
+This project demonstrates a complete and structured data wrangling workflow with:
+- Integration of multiple data sources.
+- Identification and correction of messy and inconsistent data.
+- Clean, merged dataset ready for analysis.
+- Insight that certain breeds consistently receive higher user ratings, reflecting potential social trends in pet popularity.
 
-- **Final dataset:** `twitter_archive_master.csv`  
-  Contains 1,994 entries and 22 columns with integrated and cleaned data.
 
-- **Insightful Findings:**
-  - Some dog names were extracted incorrectly from text (e.g., “a”, “this”).
-  - Most tweets have ratings above 10/10 — in line with the humorous style of WeRateDogs.
-  - Labrador Retrievers received the highest average ratings.
-
-- **Visual Output:**
-  - A bar chart showing top 5 dog breeds by average rating.
-
----
-
-## Technologies Used
-
-- Python  
-- Pandas, NumPy  
-- Matplotlib  
-- Tweepy, Requests  
-- Jupyter Notebook
-
----
+## License
+This project is intended for educational purposes under an open license. Data provided by the Udacity Data Analyst Nanodegree and the WeRateDogs Twitter account.
