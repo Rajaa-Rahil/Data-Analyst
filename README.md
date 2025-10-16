@@ -22,16 +22,7 @@ Explore some of the best GitHub repositories that provide rich and diverse datas
 | **DataHub Datasets** | Ready-to-use datasets in CSV/JSON formats across multiple topics | [Open Repo](https://github.com/datasets) |
 | **OECD Data** | Economic indicators and metrics from the OECD database | [Open Repo](https://github.com/amarder/oecd-data) |
 
----
 
-### 🧭 How to Use
-You can click any link above to access the raw data directly, or clone the repository using:
-
-```bash
-git clone <repository_url>
-
-
----
 ## 📂 مصادر بيانات حقيقية مفيدة
 
 إليك بعض مستودعات GitHub التي تحتوي على **بيانات مفتوحة حقيقية**:
