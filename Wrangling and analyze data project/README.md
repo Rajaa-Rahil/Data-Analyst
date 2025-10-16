@@ -7,7 +7,7 @@ This project focuses on data wrangling, cleaning, and analysis of the popular **
 
 ## Project Overview
 
-The notebook `wrangle_act.ipynb` demonstrates a full data wrangling workflow:
+The project demonstrates a full data wrangling workflow:
 1. **Data Gathering** — Collect datasets from multiple sources.
 2. **Data Assessment** — Detect and document quality and tidiness issues.
 3. **Data Cleaning** — Fix, structure, and merge datasets into a single master file.
@@ -19,11 +19,9 @@ The notebook `wrangle_act.ipynb` demonstrates a full data wrangling workflow:
 
 Three datasets were used in this project:
 
-| Source | Description | Format |
-|--------|--------------|--------|
-| `twitter-archive-enhanced.csv` | Original WeRateDogs tweet archive | CSV |
-| `image-predictions.tsv` | Neural network predictions of dog breeds | TSV |
-| `tweet_json.txt` | Fetched from Twitter API containing retweet and favorite counts | JSON |
+1. `twitter-archive-enhanced.csv`: Original WeRateDogs tweet archive.
+2. `image-predictions.tsv`: Neural network predictions of dog breeds.
+3. `tweet_json.txt`: Fetched from Twitter API containing retweet and favorite counts.
 
 ---
 
