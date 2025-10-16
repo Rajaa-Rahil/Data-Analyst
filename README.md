@@ -29,3 +29,9 @@ You can click any link above to access the raw data directly, or clone the repos
 
 ```bash
 git clone <repository_url>
+
+
+---
+
+هل ترغبين أن أضيف إلى هذا الجدول أيضًا **مصادر بيانات مالية ومصرفية** (مثل IMF و World Bank و OECD الخاصة بالقطاع البنكي والاستدامة) بحيث تناسب أكثر موضوع دراستك عن **الاستدامة في المصارف الليبية**؟
+
