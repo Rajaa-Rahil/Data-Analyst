@@ -11,9 +11,5 @@ Explore some of the best GitHub repositories that provide rich and diverse datas
 | **DataHub Datasets** | Ready-to-use datasets in CSV/JSON formats across multiple topics | [Open Repo](https://github.com/datasets) |
 | **World Development Indicators (WDI)** | Global development indicators from the World Bank | [View Repository](https://github.com/datasets/world-development-indicators) |
 | **SPI — Statistical Performance Indicators** | Official data from the World Bank’s Statistical Performance Indicators project | [View SPI](https://github.com/worldbank/SPI) |
-| **Awesome Public Datasets** | A large, curated list of open public datasets across multiple domains | [View List](https://github.com/awesomedata/awesome-public-datasets) |
-| **OECD Data Mining** | Tools for programmatic access and download of OECD datasets | [View Repository](https://github.com/snatch59/oecd-data-mining) |
-| **World Bank Data (Python Package)** | A Python package for easy access to World Bank data APIs | [View Package](https://github.com/mwouts/world_bank_data) |
-| **OECD Automation** | Project for automating the retrieval of OECD datasets | [View Project](https://github.com/JiscSD/OECD) |
 
 ---
