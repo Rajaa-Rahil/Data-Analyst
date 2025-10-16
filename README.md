@@ -11,5 +11,5 @@ Explore some of the best GitHub repositories that provide rich and diverse datas
 | **DataHub Datasets** | Ready-to-use datasets in CSV/JSON formats across multiple topics | [Open Repo](https://github.com/datasets) |
 | **World Development Indicators (WDI)** | Global development indicators from the World Bank | [View Repository](https://github.com/datasets/world-development-indicators) |
 | **SPI — Statistical Performance Indicators** | Official data from the World Bank’s Statistical Performance Indicators project | [View SPI](https://github.com/worldbank/SPI) |
-
+| **Tidy WDI** | Cleaned and “tidy” World Development Indicators dataset available in CSV and Excel formats | [View Repository](https://github.com/gregbehm/tidy_wdi) |
 ---
